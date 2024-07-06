@@ -22,6 +22,7 @@
   transition: all 0.5s ease-in-out;
 }
 
+
 .navbar-sticky {
   opacity: 0.9;
   box-shadow: 0 0 10px rgba(164, 63, 63, 0.5);
@@ -44,16 +45,36 @@
 }
 
 // Will be aplyed to anything under that
+// @media (max-width: 1000px) {
+//   .hero .image-container {
+//     display: flex;
+//     justify-content: center;
+//   }
+// }
+
 @media (max-width: 1000px) {
+  .navbar {
+    background: var(--bs-dark);
+  }
+
   .hero .image-container {
     display: flex;
     justify-content: center;
   }
+
+  .hero .text-container {
+    text-align: center;
+  }
 }
+
 
 .hero .text-container {
   text-align: center;
 }
+
+
+
+
 
 /*Notes:
  * background: This CSS property is a shortcut that can set several 
